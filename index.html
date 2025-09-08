@@ -85,7 +85,7 @@
     <div class="row">
       <p>
         <ul>
-          <li><b>06.2025.</b> 1 LLM Paper Submitted @ Neurocomputing: <a href="https://www.sciencedirect.com/journal/neurocomputing">Coming Soon...</a>.
+          <li><b>06.2025.</b> 1 VLLM Paper Submitted @ Neurocomputing: <a href="https://www.sciencedirect.com/journal/neurocomputing">Coming Soon...</a>.
           <li><b>05.2025.</b> 1 RL Paper Submitted @ IEEE Transactions on Systems, Man and Cybernetics: Systems: <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">Coming Soon...</a>.
           <li><b>04.2025.</b> 1 CV+RL Paper Submitted @ Pattern Recognition: <a href="https://www.sciencedirect.com/journal/pattern-recognition">Coming Soon...</a>.
           <li><b>01.2025.</b> 1 CV Paper Accepted @ The Journal of Supercomputing: <a href="https://link.springer.com/article/10.1007/s11227-025-06928-1">SiamSDT</a>.
@@ -314,32 +314,137 @@
           which means that the objects moving in the opposite direction should be counted down.
         </p>
       </div>
-
     </div>
 
     <div class="row common-rows" style="margin-top: 3%">
         <div class="col-xs-12 custom-col-sm-3 left-column">
-          <img src="pictures/patent_spark_plug.png" alt="spark_plug" class="paper-images">
+          <img src="pictures/patent_vllm.png" alt="mot" class="paper-images">
       </div>
       <div class="col-xs-12 col-sm-9 right-column">
-        <span style="background-color:#e2c7e5">Computer Vision</span>
+        <span style="background-color:#87ceeb">Vision Language Large Model</span>
         <br>
         <papertitle>
-            An intelligent spark plug appearance defect detection system
+            A Vision-Language Large Model Perception Enhancement Method and System Based on Visual Prompting
         </papertitle>
         <br>
-        <a href="https://homepage.hrbeu.edu.cn/web/cangyan">Yan Cang</a>,
+        <a href="http://homepage.hit.edu.cn/liuhuanyu">Huanyu Liu</a>,
+        Tianxing Guo,
         <strong>Jiazheng Wen</strong>,
-        <a href="https://homepage.hrbeu.edu.cn/web/qiaoyulong">Yulong Qiao</a>,
-        <a href="https://homepage.hrbeu.edu.cn/web/chenchunyu">Chunyu Chen</a>.
+        <a href="http://homepage.hit.edu.cn/lijunbao">Junbao Li</a>,
+        Yutong Jiang,
+        Yue Zhou.
         <br>
         <em>Patent</em>.
         <br>
         <a href="https://pss-system.cponline.cnipa.gov.cn/">patent page</a>
         <br><br>
         <p style="margin-top: -1%;">
-          The present invention belongs to the field of image processing and
-          specifically relates to an intelligent spark plug appearance defect detection system
+          To address the urgent need for deploying small-scale large language models (LLMs) under resource constraints,
+          the proposed method works as follows:
+          a segmentation component generates masks and an object segmentation list from the original image;
+          a visual encoder processes the original image and masks to extract multi-level visual features highlighting object positions/boundaries,
+          which are then refined via layer normalization and MLP layers into final visual features;
+          finally, the masks, segmentation list (as text instructions),
+          and visual features are fed into a vision-language large model (VLLM) for autoregressive semantic generation.
+          This method also enhances VLLMs’ object perception and question-answering abilities without adding extra training parameters.
+        </p>
+      </div>
+    </div>
+
+    <div class="row common-rows" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+          <img src="pictures/patent_aertg.png" alt="mot" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <span style="background-color:#ff9aa2">Reinforcement Learning</span>
+        <br>
+        <papertitle>
+            An Offline Reinforcement Learning Agent Method for Action Exploration Based on Expected Reward Regularization
+        </papertitle>
+        <br>
+        <a href="http://homepage.hit.edu.cn/liuhuanyu">Huanyu Liu</a>,
+        <strong>Jiazheng Wen</strong>,
+        <a href="http://homepage.hit.edu.cn/lijunbao">Junbao Li</a>.
+        <br>
+        <em>Patent</em>.
+        <br>
+        <a href="https://pss-system.cponline.cnipa.gov.cn/">patent page</a>
+        <br><br>
+        <p style="margin-top: -1%;">
+          This method resolves the poor reliability of trajectory stitching and strategy generalization in complex tasks with existing approaches.
+          It involves: 1) building sequence-modeled state/action losses for iterative training;
+          2) designing a weighted squared error-based RTG loss;
+          3) using a double Q-learning framework (with two Q-functions, conservative Q-learning constraints, and Boltzmann distribution)
+          to optimize action exploration;
+          4) integrating state, action, RTG regularization, and Q-value losses into a joint optimization objective;
+          5) generating diverse action predictions via noise-perturbed RTG candidate sampling;
+          6) selecting the highest-Q action (evaluated by double conservative Q-functions) for execution.
+          It is primarily used in agent exploration.
+        </p>
+      </div>
+    </div>
+
+    <div class="row common-rows" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+          <img src="pictures/patent_mav.png" alt="mot" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <span style="background-color:#e2c7e5">Computer Vision</span>
+        <br>
+        <papertitle>
+            A MAV-Borne Target Tracking Method and System Based on Adaptive Dynamic Templates
+        </papertitle>
+        <br>
+        Yuxin Zhang,
+        <a href="http://homepage.hit.edu.cn/lijunbao">Junbao Li</a>,
+        <a href="http://homepage.hit.edu.cn/liuhuanyu">Huanyu Liu</a>,
+        <strong>Jiazheng Wen</strong>.
+        <br>
+        <em>Patent</em>.
+        <br>
+        <a href="https://pss-system.cponline.cnipa.gov.cn/">patent page</a>
+        <br><br>
+        <p style="margin-top: -1%;">
+          This invention solves the trade-off between tracking performance and computational complexity in MAV-borne target tracking.
+          Its core steps: 1) Set initial, adjacent, and memory templates;
+          2) Input current frame search features and all templates into the adaptive template fusion (STF) module to generate the final template;
+          3) Correlate the final template with the search template to get a response map, judge tracking state, and update adjacent/memory templates;
+          4) The memory template module uses temporal cascading to integrate historical tracking key info, fitting all history into limited memory;
+          5) The adaptive fusion module adjusts template weights dynamically across tracking stages via template-search feature similarity matrices.
+          It applies to MAV-borne target tracking.
+        </p>
+      </div>
+    </div>
+
+    <div class="row common-rows" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+          <img src="pictures/patent_trhelptr.png" alt="mot" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <span style="background-color:#ff9aa2">Reinforcement Learning</span>
+        <span style="background-color:#e2c7e5">Computer Vision</span>
+        <br>
+        <papertitle>
+            A Long-Term Single-Target Tracking Method, System, and Device Based on Sequence Modeling Reinforcement Learning
+        </papertitle>
+        <br>
+        <a href="http://homepage.hit.edu.cn/liuhuanyu">Huanyu Liu</a>,
+        <strong>Jiazheng Wen</strong>,
+        <a href="http://homepage.hit.edu.cn/lijunbao">Junbao Li</a>.
+        <br>
+        <em>Patent</em>.
+        <br>
+        <a href="https://pss-system.cponline.cnipa.gov.cn/">patent page</a>
+        <br><br>
+        <p style="margin-top: -1%;">
+          This invention resolves poor tracker performance in long-term tracking. Key steps:
+          1) Build a sequence modeling reinforcement learning-based long-term tracker with Transformer-based perception
+          and decision layers (perception layer’s visual Transformer outputs feed the decision Transformer, which feeds action sequences back);
+          2) The tracker integrates sequence modeling reinforcement learning to adaptively select baseline short-term trackers;
+          3) Make decisions via memory sequence analysis;
+          4) Individual short-term trackers impact overall results (jointly determined by visual encoder and tracking method);
+          5) The decision layer dynamically optimizes search region position for tracking.
+          It applies to long-term single-target tracking.
         </p>
       </div>
     </div>
@@ -371,6 +476,34 @@
         </p>
       </div>
     </div>
+
+    <div class="row common-rows" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+          <img src="pictures/patent_spark_plug.png" alt="spark_plug" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <span style="background-color:#e2c7e5">Computer Vision</span>
+        <br>
+        <papertitle>
+            An intelligent spark plug appearance defect detection system
+        </papertitle>
+        <br>
+        <a href="https://homepage.hrbeu.edu.cn/web/cangyan">Yan Cang</a>,
+        <strong>Jiazheng Wen</strong>,
+        <a href="https://homepage.hrbeu.edu.cn/web/qiaoyulong">Yulong Qiao</a>,
+        <a href="https://homepage.hrbeu.edu.cn/web/chenchunyu">Chunyu Chen</a>.
+        <br>
+        <em>Patent</em>.
+        <br>
+        <a href="https://pss-system.cponline.cnipa.gov.cn/">patent page</a>
+        <br><br>
+        <p style="margin-top: -1%;">
+          The present invention belongs to the field of image processing and
+          specifically relates to an intelligent spark plug appearance defect detection system
+        </p>
+      </div>
+    </div>
+
 
   <br>
   <div class="container">
