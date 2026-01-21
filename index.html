@@ -101,13 +101,14 @@
     <div class="row">
       <p>
         <ul>
+          <li><b>01.2026.</b> 1 CV+RL Paper Accepted @ Pattern Recognition: <a href="https://www.sciencedirect.com/journal/pattern-recognition">TrHelpTr</a>.
           <li><b>12.2025.</b> 1 VLLM Paper Accepted @ Neurocomputing: <a href="https://doi.org/10.1016/j.neucom.2025.132423">Seg-LLaVA</a>.
-          <li><b>09.2025.</b> 1 CV+RL Paper Submitted @ Pattern Recognition: <a href="https://www.sciencedirect.com/journal/pattern-recognition">Coming Soon...</a>.
-          <li><b>06.2025.</b> 1 VLLM Paper Submitted @ Neurocomputing: <a href="https://www.sciencedirect.com/journal/neurocomputing">Coming Soon...</a>.
-          <li><b>05.2025.</b> 1 RL Paper Submitted @ IEEE Transactions on Systems, Man and Cybernetics: Systems: <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">Coming Soon...</a>.
-          <li><b>04.2025.</b> 1 CV+RL Paper Submitted @ Pattern Recognition: <a href="https://www.sciencedirect.com/journal/pattern-recognition">Coming Soon...</a>.
-          <li><b>01.2025.</b> 1 CV Paper Accepted @ The Journal of Supercomputing: <a href="https://link.springer.com/article/10.1007/s11227-025-06928-1">SiamSDT</a>.
-          <li><b>01.2025.</b> 1 CV Paper Accepted @ IET Image Processing: <a href="https://ietresearch.onlinelibrary.wiley.com/journal/17519667">ACP</a>.
+          <li><b>09.2025.</b> 1 RL Paper Submitted @ Pattern Recognition: <a href="https://www.sciencedirect.com/journal/pattern-recognition">Coming Soon...</a>.
+<!--          <li><b>06.2025.</b> 1 VLLM Paper Submitted @ Neurocomputing: <a href="https://www.sciencedirect.com/journal/neurocomputing">Coming Soon...</a>.-->
+<!--          <li><b>05.2025.</b> 1 RL Paper Submitted @ IEEE Transactions on Systems, Man and Cybernetics: Systems: <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">Coming Soon...</a>.-->
+<!--          <li><b>04.2025.</b> 1 CV+RL Paper Submitted @ Pattern Recognition: <a href="https://www.sciencedirect.com/journal/pattern-recognition">Coming Soon...</a>.-->
+<!--          <li><b>01.2025.</b> 1 CV Paper Accepted @ The Journal of Supercomputing: <a href="https://link.springer.com/article/10.1007/s11227-025-06928-1">SiamSDT</a>.-->
+<!--          <li><b>01.2025.</b> 1 CV Paper Accepted @ IET Image Processing: <a href="https://ietresearch.onlinelibrary.wiley.com/journal/17519667">ACP</a>.-->
 <!--          <li><b>12.2024.</b> 1 CV Paper Accepted @ AAAI'25: <a href="https://doi.org/10.1609/aaai.v39i3.32333">SOC-GS</a>.-->
 <!--          <li><b>11.2024.</b> 1 RL+CV Paper Accepted @ Neurocomputing: <a href="https://www.sciencedirect.com/journal/neurocomputing">PTZ Camera Control</a>.-->
 <!--          <li><b>11.2024.</b> 1 CV Paper Submitted @ The Journal of Supercomputing: <a href="https://link.springer.com/journal/11227">Coming Soon...</a>.-->
@@ -126,6 +127,45 @@
   <div class="container">
     <div class="row section-heading-rows">
       <h4>Publications</h4>
+    </div>
+
+      <div class="row common-rows" style="margin-top: 3%">
+        <div class="col-xs-12 custom-col-sm-3 left-column">
+          <img src="pictures/trhelptr.png" alt="trhelptr" class="paper-images">
+      </div>
+      <div class="col-xs-12 col-sm-9 right-column">
+        <span style="background-color:#ff9aa2">Reinforcement Learning</span>
+        <span style="background-color:#e2c7e5">Computer Vision</span>
+        <br>
+        <papertitle>
+            TrHelpTr: A Long-Term Single-Object Tracking Paradigm Based on Sequence Modeling Reinforcement Learning
+        </papertitle>
+        <br>
+        <strong>Jiazheng Wen</strong>,
+        <a href="http://homepage.hit.edu.cn/liuhuanyu">Huanyu Liu</a>,
+        <a href="http://homepage.hit.edu.cn/lijunbao">Junbao Li</a>,
+        <br>
+        <em>Pattern Recognition</em>.
+        <br>
+        <a href="https://www.sciencedirect.com/journal/pattern-recognition">paper coming soon..</a>
+        <br><br>
+        <p style="margin-top: -1%;">
+          Long-term single-object trackers are designed to maintain robust tracking performance,
+          even when objects temporarily disappear from view, face prolonged occlusions,
+          or undergo abrupt changes in appearance. Most existing methods tackle these challenges by combining baseline trackers
+          and reformulating the long-term tracking task as a decision problem: identifying the most suitable short-term tracker for each frame.
+          However, many of these baseline trackers, not originally intended for long-term tracking, often encounter significant limitations,
+          such as difficulties in adapting to sudden object motion shifts and varying environmental conditions.
+          To bridge this gap, we propose an innovative approach that leverages reinforcement learning within a sequence model.
+          This method not only controls the search area but also incorporates an agent-based decision-making process to assess object presence
+          and automatically select the most applicable baseline tracker. Our proposed solution, TrHelpTr,
+          demonstrates impressive generalization capabilities across various trackers and scenarios in a plug-and-play manner.
+          We observe significant and consistent improvements when applying our method to three representative trackers.
+          Comprehensive evaluations on the LTB50, OTB100, LaSOT, TLP, UAV123 and GOT-10K benchmarks and comparisons with other long-term tracking algorithms
+          on the VOT leaderboard reveal that TrHelpTr achieves superior tracking precision and recall, effectively addressing the critical issue of object loss during re-detection.
+        </p>
+      </div>
+
     </div>
 
       <div class="row common-rows" style="margin-top: 3%">
